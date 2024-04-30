@@ -1,0 +1,183 @@
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 50px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#logo {
+    width: 56px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+#image-dashboard {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-weight: 300;
+    color: var(--gray);
+    font-size: 22px;
+    line-height: 32px;
+    margin: 20px 0 10px;
+}
+
+h1 > span {
+    font-weight: 700;
+    color: var(--very-dark-blue)
+}
+
+
+
+p {
+    font-size: 12px;
+    color: var(--very-dark-blue);
+    margin: 0 0 20px3;
+}
+
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100%;
+    margin: 20px 0 40px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 281px;
+    height: 40px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 25px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    color: var(--pale-blue);
+}
+
+input[type="email"],
+textarea {
+    font-family: inherit; 
+}
+
+#error-message {
+    margin: 5px 0;
+    text-align: center;
+    color: var(--light-red);
+    font-size: 10px;
+    font-style: italic;
+    display: none;
+}
+
+.active {
+    border: 1px solid var(--light-red);
+   
+}
+
+button {
+    box-sizing: border-box;
+    width: 281px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+#icons {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+.fa-brands::before {
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    color: var(--blue);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.fa-brands {
+    cursor: pointer;
+}
+
+#copyrights {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #logo {
+        width: 90px;
+        height: 39px;
+    }
+
+    h1 { 
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+
+    }
+
+    #form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    input {
+        width: 421px;
+        height: 56px;
+        padding-left: 30px;
+    }
+    
+    button {
+        width: 200px;
+        height: 56px;
+
+    }
+
+    #image-dashboard {
+        width: 640px;
+        height: 383px;
+    }
+    
+ }
+
+
