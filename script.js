@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-const button = document.getElementById('button')
 const emailInput = document.getElementById('email')
 const form = document.getElementById('form')
 let formsubmitted = false
